@@ -8,7 +8,7 @@ namespace MillionCoinFlips
 {
     class Program
     {
-        //Test
+        //Test.
         static void Main(string[] args)
         {
             bool stopflipping = false;
