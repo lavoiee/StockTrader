@@ -33,8 +33,7 @@ namespace StockTrader
             while (!exit)
             {
                 DisplayMenu();                
-            }
-            
+            }           
         }
 
         private static void DisplayTradeModule()
