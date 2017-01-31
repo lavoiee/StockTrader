@@ -12,7 +12,7 @@ using System.Net.Sockets; //JSON QUANDL API Bring the data in Figure it out.
 //
 // Experiment with Windows Forms Applications. And SQL Server.
 // Locate a Scientific Graphing Library for graphing stock data.
-// Can you use d3.js in C#? ILNumerics SVG Graphic math library.
+// Can you use d3.js in C#? ILNumerics SVG Graphic math library
 namespace StockTrader
 {
     class Program
