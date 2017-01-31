@@ -1,2 +1,0 @@
-﻿Try building a betting system into this next.
-Add validation also.

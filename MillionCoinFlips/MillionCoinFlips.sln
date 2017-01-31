@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "probabilitiesOdds", "probabilitiesOdds\probabilitiesOdds.csproj", "{37E3141C-3C3E-42E6-A114-BDB0FB2F32B0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MillionCoinFlips", "MillionCoinFlips\MillionCoinFlips.csproj", "{C1D0021F-EE6E-48F9-8098-21374B2C4924}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +11,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{37E3141C-3C3E-42E6-A114-BDB0FB2F32B0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{37E3141C-3C3E-42E6-A114-BDB0FB2F32B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{37E3141C-3C3E-42E6-A114-BDB0FB2F32B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{37E3141C-3C3E-42E6-A114-BDB0FB2F32B0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C1D0021F-EE6E-48F9-8098-21374B2C4924}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C1D0021F-EE6E-48F9-8098-21374B2C4924}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C1D0021F-EE6E-48F9-8098-21374B2C4924}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C1D0021F-EE6E-48F9-8098-21374B2C4924}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

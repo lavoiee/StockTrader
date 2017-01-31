@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace probabilitiesOdds
+namespace MillionCoinFlips
 {
-    public class Coin
+    class Coin
     {
         //
         // Fields
@@ -66,7 +66,7 @@ namespace probabilitiesOdds
             this.flips = flips;
             this.bias = bias;
         }
-        
+
         //
         // Methods
         //
@@ -77,17 +77,11 @@ namespace probabilitiesOdds
             // flipped is heads or tails. Increment number of flips.
             flips += 1;
             int randomNum;
-            randomNum = random.Next(0, 9);
-            
-            //
-            // If 5 or less the coin being flipped will be heads
-            // if more than 5 it will be tails.
-            //
-            // Maybe switch this to check if it is even or odd and
-            // use that to set the bool instead. Seems to be coming up
-            // heads more ofter with this method as it is now.
-            //
-            if (randomNum <= 5)
+            //randomNum = random.Next(0, 9);
+            randomNum = random.Next(1, 2);
+
+            //////////////////NEW METHOD USING MODULO///////////////////////
+            if (randomNum % 2 != 0)
             {
                 heads = true;
                 numberOfHeads += 1;
@@ -97,10 +91,35 @@ namespace probabilitiesOdds
                 heads = false;
                 numberOfTails += 1;
             }
-            FlipNotification(heads);
+            //FlipNotification(heads);
             return heads;
+
+
+
+
+            //////////////////FIRST METHOD//////////////////////////////////
+            //
+            // If 5 or less the coin being flipped will be heads
+            // if more than 5 it will be tails.
+            //
+            // Maybe switch this to check if it is even or odd and
+            // use that to set the bool instead. Seems to be coming up
+            // heads more ofter with this method as it is now.
+            //
+            //if (randomNum <= 5)
+            //{
+            //    heads = true;
+            //    numberOfHeads += 1;
+            //}
+            //else
+            //{
+            //    heads = false;
+            //    numberOfTails += 1;
+            //}
+            //FlipNotification(heads);
+            //return heads;
         }
-        
+
         public void FlipNotification(bool heads)
         {
             Console.WriteLine("Flipping Coin...");
@@ -115,21 +134,28 @@ namespace probabilitiesOdds
             }
             ResetDisplay();
         }
-        
+
         public void DisplayFlipStatistics()
         {
             Console.WriteLine($"Number of heads:{numberOfHeads}");
             Console.WriteLine($"Number of tails:{numberOfTails}");
             Console.WriteLine($"Total number of flips:{flips}");
+            Console.WriteLine($"Percentage of heads:{Percentagizer((double)numberOfHeads / flips)}%");
             ResetDisplay();
         }
-        
+
+        private object Percentagizer(double v)
+        {
+            v *= 100;
+            return v;
+        }
+
         public void ResetDisplay()
         {
             Console.WriteLine();
             Console.WriteLine("Press any key to continue...");
             Console.ReadKey();
             Console.Clear();
-        }     
+        }
     }
 }
